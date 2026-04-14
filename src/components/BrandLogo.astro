@@ -16,7 +16,7 @@ const hasPng = fs.existsSync(pngPath);
 const hasJpg = fs.existsSync(jpgPath);
 
 const hasLogo = hasPng || hasJpg;
-const logoSrc = hasPng ? '/logo.png' : '/logo.jpg';
+const logoSrc = hasPng ? '/logo.png?v=2' : '/logo.jpg?v=2';
 
 // サイズに応じたスタイリング
 const baseClasses = size === 'sm' 
