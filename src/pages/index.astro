@@ -19,27 +19,19 @@ const pqLogoSrc = fs.existsSync(pqPngPath) ? '/pantry-quest-logo.png' : '/pantry
 ---
 
 <BaseLayout title="ホーム">
-  <div class="flex flex-col items-center justify-center py-20 text-center">
+  <div class="flex flex-col items-center justify-center pt-20 pb-10 text-center">
     <BrandLogo size="lg" />
     <h1 class="text-4xl md:text-5xl font-extrabold text-sakura-900 tracking-tight mb-6">
       Sakura Potions <span class="text-sakura-400">Portal</span>
     </h1>
-    <p class="text-xl text-gray-600 max-w-2xl leading-relaxed mb-10">
-      「日常の『痒い所』に手が届く、ちゃめっ気あふれる解決策の集積地」へようこそ。<br>
-      私たちが開発したツールのマニュアルや、裏側の技術スタックを公開しています。
+    <p class="text-xl text-gray-600 max-w-2xl leading-relaxed">
+      <span class="inline-block">「日常の『痒い所』に手が届く、</span><span class="inline-block">ちゃめっ気あふれる解決策の集積地」へようこそ。</span><br class="hidden md:block">
+      <span class="inline-block">私たちが開発したツールのマニュアルや、</span><span class="inline-block">裏側の技術スタックを公開しています。</span>
     </p>
 
-    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-md">
-      <a href="/docs" class="flex-1 bg-sakura-500 hover:bg-sakura-600 text-white font-bold py-3 px-8 rounded-full shadow-md hover:shadow-lg transition-all transform hover:-translate-y-1">
-        ドキュメントを読む
-      </a>
-      <a href="/contact" class="flex-1 bg-white hover:bg-sakura-50 border border-sakura-200 text-sakura-700 font-bold py-3 px-8 rounded-full shadow-sm hover:shadow-md transition-all transform hover:-translate-y-1">
-        お問い合わせ
-      </a>
-    </div>
   </div>
 
-  <div class="mt-16 w-full">
+  <div class="mt-8 w-full">
     <h2 class="text-2xl font-bold text-center text-sakura-800 mb-8">注目のプロジェクト</h2>
     <div class="flex overflow-x-auto pb-8 snap-x snap-mandatory md:grid md:grid-cols-2 gap-8 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
       <!-- Pantry Quest Project Card -->
@@ -55,9 +47,12 @@ const pqLogoSrc = fs.existsSync(pqPngPath) ? '/pantry-quest-logo.png' : '/pantry
           <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sakura-600 transition-colors">
             Pantry Quest
           </h3>
-          <p class="text-gray-600 mb-4">
-            冷蔵庫の余り物をAIが賢く管理してくれる在庫管理アプリ。
-            「もう賞味期限を気にしない」生活をサポートします。
+          <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+            <span class="inline-block">複数人での食材管理の</span><span class="inline-block">お悩みにフォーカスした、</span><!--
+            --><span class="inline-block">なるべく頭を使わない</span><span class="inline-block">AI在庫管理アプリ。</span>
+            <span class="inline-block">リスト共有で「重複購入」を防ぎ、</span><!--
+            --><span class="inline-block">メッセージタグで「これ食べていい？」の</span><span class="inline-block">すれ違いを解消！</span>
+            <span class="inline-block">使うたびに貯まるExpで</span><span class="inline-block">モチベーションをキープできます。</span>
           </p>
           <span class="text-sakura-500 font-medium group-hover:underline underline-offset-4">プロジェクト詳細を見る &rarr;</span>
         </div>
